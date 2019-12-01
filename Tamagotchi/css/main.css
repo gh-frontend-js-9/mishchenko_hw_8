@@ -1,0 +1,388 @@
+/** RESET **/
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-image: url(../img/bg.png);
+	background-repeat: repeat;
+	height: 100vw;
+	;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.chose-title {
+	font-size: 35px;
+	margin-bottom: 40px;
+}
+
+#easy,
+#hard {
+	background-color: #4a68abcf;
+	padding: 15px;
+	border-radius: 30px;
+	text-align: center;
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 16px;
+	min-width: 140px;
+	margin: 0 20px;
+	box-shadow: 0px 10px 19px -8px rgba(0, 0, 0, 0.75);
+	transition: 0.4s;
+}
+
+#easy:hover {
+	transition: 0.4s;
+	background-color: #4a68ab;
+}
+
+#hard {
+	background-color: #ab4a5ccf;
+}
+
+#hard:hover {
+	transition: 0.4s;
+	background-color: #ab4a5c;
+}
+
+.pet-ghost {
+	display: none;
+	background-image: url(../img/pet-ghost.gif);
+	height: 220px;
+	width: 190px;
+	margin: auto;
+	z-index: 2;
+	position: inherit;
+	background-repeat: no-repeat;
+	margin-top: 100px;
+}
+
+.pet-duck {
+	display: none;
+	background-image: url(../img/pet-duck.gif);
+	height: 220px;
+	width: 190px;
+	margin: auto;
+	z-index: 2;
+	position: inherit;
+	background-repeat: no-repeat;
+	margin-top: 80px;
+	margin-left: 170px;
+	transform: scale(0.5);
+}
+
+.died {
+	display: none;
+	background-image: url(../img/dead.png);
+	height: 220px;
+	width: 190px;
+	margin: auto;
+	z-index: 2;
+	position: inherit;
+	background-repeat: no-repeat;
+	margin-top: 100px;
+}
+
+.life {
+	position: relative;
+	z-index: 2;
+	top: 264px;
+	font-size: 16px;
+	left: -105px;
+	font-weight: 500;
+}
+
+.food {
+	position: absolute;
+	left: 96px;
+	top: 100px;
+	z-index: 2;
+	height: 20px;
+}
+
+#food-per {
+	font-size: 12px;
+	position: absolute;
+	left: 120px;
+	top: 105px;
+	z-index: 2;
+	font-weight: 600;
+}
+
+.food-icon {
+	position: absolute;
+	z-index: 2;
+	top: 76px;
+	left: 120px;
+	font-size: 20px;
+}
+
+.clean {
+	position: absolute;
+	left: 218px;
+	top: 100px;
+	z-index: 2;
+	height: 20px;
+}
+
+.clean-icon {
+	position: absolute;
+	z-index: 2;
+	left: 247px;
+	top: 76px;
+	font-size: 20px;
+}
+
+#clean-per {
+	font-size: 12px;
+	position: absolute;
+	left: 247px;
+	top: 105px;
+	z-index: 2;
+	font-weight: 600;
+}
+
+.happiness {
+	position: absolute;
+	left: 337px;
+	top: 100px;
+	z-index: 2;
+	height: 20px;
+}
+
+.hppiness-icon {
+	position: absolute;
+	z-index: 2;
+	left: 361px;
+	top: 76px;
+	font-size: 20px;
+}
+
+#happiness-per {
+	font-size: 12px;
+	position: absolute;
+	left: 363px;
+	top: 105px;
+	z-index: 2;
+	font-weight: 600;
+}
+
+.body {
+	position: relative;
+	position: relative;
+	width: 500px;
+	height: 558.03px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.body img {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	top: -60px;
+}
+
+i {
+	color: #4c4c4cc9;
+}
+
+.eat,
+.wash,
+.run {
+	position: absolute;
+	top: 310px;
+	padding: 22px;
+	border-radius: 50%;
+	border: 2px solid #909090;
+}
+
+.eat:active {
+	border: 2px solid #ffffff;
+}
+
+.wash:active {
+	border: 2px solid #ffffff;
+}
+
+.run:active {
+	border: 2px solid #ffffff;
+}
+
+.reset:active {
+	border: 2px solid #ffffff;
+}
+
+.eat:hover {
+	box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
+.wash:hover {
+	box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
+.run:hover {
+	box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
+.eat {
+	margin-left: -155px;
+	background-color: #314798a6;
+}
+
+.wash {
+	margin-left: -22px;
+	top: 390px;
+	background-color: #314798a6;
+}
+
+.run {
+	margin-left: 122px;
+	background-color: #314798a6;
+}
+
+.reset {
+	position: absolute;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: #f10909;
+	left: 7%;
+	top: 250px;
+	border: 2px solid #909090;
+}
+
+.reset-text {
+	position: absolute;
+	left: 5.7%;
+	font-size: 10px;
+	font-weight: 600;
+	top: 270px;
+}
+
+.tamagotchi {
+	display: none;
+}
+
+.feed-text,
+.wash-text,
+.run-text {
+	position: absolute;
+	color: #717171;
+}
+
+.feed-text {
+	left: 101px;
+	top: 365px;
+}
+
+.wash-text {
+	left: 233px;
+	top: 445px;
+}
+
+.run-text {
+	left: 382px;
+	top: 365px;
+}
+
+.game-over {
+	display: none;
+	position: absolute;
+	top: 305px;
+	left: 174px;
+	line-height: 26px;
+	z-index: 2;
+	font-size: 16px;
+	color: red;
+	font-weight: 600;
+}
