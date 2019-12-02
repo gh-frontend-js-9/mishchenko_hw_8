@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/fontaversome.css" />
+    <link rel="shortcut icon" type='image/x-icon' href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <main>
+        <section class="chose-pet">
+            <h1 class="chose-title">Choose your pet</h1>
+            <button id="easy">Ghost (Easy)</button>
+            <button id="hard">Duck (Hard)</button>
+        </section>
+        <div class="tamagotchi">
+            <div class="body">
+                <span class="food-icon"><i class="fas fa-utensils"></i></span>
+                <span class="clean-icon"><i class="fas fa-shower"></i></span>
+                <span class="hppiness-icon"><i class="fas fa-grin-squint"></i></span>
+                <meter class="food" id="food" min="0" max="100" low="33" high="66" optimum="80"></meter>
+                <span id="food-per"></span>
+                <meter class="clean" id="clean" min="0" max="100" low="33" high="66" optimum="80"></meter>
+                <span id="clean-per"></span>
+                <meter class="happiness" id="happiness" min="0" max="100" low="33" high="66" optimum="80"></meter>
+                <span id="happiness-per"></span>
+                <div class="life">
+                    <span>Lifetime: </span><span id="lifetime">0</span>
+                </div>
+                <img src="img/body.png" alt="Tamagotchi Body" width="500px" />
+                <div class="pet-ghost" id="pet-ghost"></div>
+                <div class="pet-duck" id="pet-duck"></div>
+                <div class="died" id="died"></div>
+                <button class="eat" onclick="Eat()" id="eat"></button>
+                <span class="feed-text">Feed</span>
+                <button class="wash" onclick="Wash()" id="wash"></button>
+                <span class="wash-text">Wash</span>
+                <button class="run" onclick="Run()" id="run"></button>
+                <span class="run-text">Run</span>
+                <button class="reset" onClick="window.location.reload()"></button>
+                <span class="reset-text">Reset</span>
+                <div class="game-over" id="game-over">You pet is DEAD. <br> Press 'Reset' button.</div>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
